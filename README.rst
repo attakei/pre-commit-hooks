@@ -11,7 +11,7 @@ Add using hooks into your ``.pre-commit-config.yaml``.
    repos:
 
      - repo: https://github.com/attakei/pre-commit-hooks
-       rev: v0.0.0
+       rev: v0.0.1
        hooks:
          - id: conventional-commits
 

@@ -1,0 +1,7 @@
+- id: check-conventional-commits
+  name: check for conventional-commits
+  description: 'check about that commit message is based on conventional-commits'
+  entry: check-conventional-commits
+  language: python
+  stages:
+    - commit-msg
