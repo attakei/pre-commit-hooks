@@ -6,6 +6,7 @@ repos:
         description: 'Check that commit message is based on  "conventional commits" for pre-commit'
         entry: python attakei_pre_commit_hooks/check_conventional_commits.py
         language: python
+        args: ['--extra-types', 'docs']
         stages:
           - commit-msg
   - repo: https://github.com/PyCQA/doc8
