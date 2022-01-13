@@ -1,4 +1,13 @@
 repos:
+  - repo: local
+    hooks:
+      - id: conventional-commits
+        name: 'Check "conventional commits"'
+        description: 'Check that commit message is based on  "conventional commits" for pre-commit'
+        entry: python attakei_pre_commit_hooks/check_conventional_commits.py
+        language: python
+        stages:
+          - commit-msg
   - repo: https://github.com/PyCQA/doc8
     rev: 0.10.1
     hooks:
